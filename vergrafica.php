@@ -287,6 +287,7 @@ mysqli_close($enlace);
 	var ctx = c.getContext("2d");
 	ctx.beginPath();
 	ctx.arc(50, 80, Math.sqrt((6362*por2/100)/Math.PI), 0, 2 * Math.PI);
+	/*El radio de la categoría podría hallarse e una forma más sencilla:  radioCategoríaEgreso=EgresoCategoría*45/EgresosTotales    Ya que el radio de los egresos totales se deja constante en 45*/
 	ctx.stroke();
 	ctx.font = "14px Comic Sans MS";
 	ctx.fillStyle = "red";
